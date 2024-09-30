@@ -98,6 +98,18 @@ const ListContainer3 = styled.div`
     width: 50%;
   }
 `;
+const Link = styled.a`
+  color: #007ab7 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 const Into = () => {
   return (
     <Layout>
@@ -106,7 +118,7 @@ const Into = () => {
         {/* LIST .................... */}
         <List>
           <Image src="https://www.fedex.com/content/dam/fedex/us-united-states/shipping/images/POD_UnifyCustomerJourney_727x463.jpg" />
-          <Heading type="Into2">
+          <Heading as="h4">
             Unify your customer journey, from start to finish
           </Heading>
           <Text type="IntoPara">
@@ -114,12 +126,12 @@ const Into = () => {
             fdx. Optimize workflows, boost customer experience, and streamline
             options. From demand to conversion, fulfillment to returns.
           </Text>
-          <a href="#">Explore fdx solutions</a>
+          <Link>Explore fdx solutions</Link>
         </List>
         {/* LIST .................... */}
         <List>
           <Image src="https://www.fedex.com/content/dam/fedex/us-united-states/shipping/images/POD_ReachNewMarkets_727x463.jpg" />
-          <Heading type="Into2">
+          <Heading as="h4">
             Reach new markets with global air freight shipping
           </Heading>
           <Text type="IntoPara">
@@ -127,7 +139,7 @@ const Into = () => {
             lbs. or more. Items arrive in 1–5 business days. Plus, there’s no
             need for freight forwarders, and customs clearance is included.
           </Text>
-          <a href="#">Get a rate quote</a>
+          <Link>Get a rate quote</Link>
         </List>
       </ListLayout>
       {/* LIST LAYOUT 2 ...............................*/}
@@ -135,53 +147,53 @@ const Into = () => {
         <List2>
           <Image2 src="https://www.fedex.com/content/dam/fedex/us-united-states/shipping/images/POD_Quick_Shipping_727x463.jpg" />
           <ListContainer>
-            <Heading type="Into2">Quick shipping in fewer clicks</Heading>
+            <Heading as="h4">Quick shipping in fewer clicks</Heading>
             <Text type="IntoPara">
               Get ready for the busy holiday shipping season with FedEx Ship
               Manager®. Sync your online store, create labels faster, and keep
               customers updated on their shipment.
             </Text>
-            <a href="#">Manage your shipping</a>
+            <Link>Manage your shipping</Link>
           </ListContainer>
         </List2>
         {/* List 2 ....................... */}
         <List2>
           <Image2 src="https://www.fedex.com/content/dam/fedex/us-united-states/shipping/images/POD_EarnGiftCards_727x463.jpg" />
           <ListContainer>
-            <Heading type="Into2">Earn gift cards with FedEx Rewards</Heading>
+            <Heading as="h4">Earn gift cards with FedEx Rewards</Heading>
             <Text type="IntoPara">
               Holiday shipping is right around the corner. Don’t miss out on all
               the benefits our free loyalty program has to offer—including gift
               cards to name-brand retailers. Enroll today to receive your
               welcome offer.
             </Text>
-            <a href="#">Join now</a>
+            <Link>Join now</Link>
           </ListContainer>
         </List2>
         {/* List 2 ....................... */}
         <List2>
           <Image2 src="https://www.fedex.com/content/dam/fedex/us-united-states/shipping/images/POD_FindTheSpeed_727x463.jpg" />
           <ListContainer>
-            <Heading type="Into2">Find the speed and cost you need</Heading>
+            <Heading as="h4">Find the speed and cost you need</Heading>
             <Text type="IntoPara">
               Choose from fast, time-definite services or reliable,
               cost-effective shipping to every ZIP code. Compare the benefits
               and pick the right option for you and your recipient.
             </Text>
-            <a href="#">Start a shipment</a>
+            <Link>Start a shipment</Link>
           </ListContainer>
         </List2>
         {/* List 2 ....................... */}
         <List2>
           <Image2 src="https://www.fedex.com/content/dam/fedex/us-united-states/shipping/images/POD_DroppingOffPkgs_727x463.jpg" />
           <ListContainer>
-            <Heading type="Into2">Dropping off packages is easy</Heading>
+            <Heading as="h4">Dropping off packages is easy</Heading>
             <Text type="IntoPara">
               Need to get those last few customer orders out the door today?
               Find the nearest drop off location in a few clicks. Some are even
               open 24 hours.
             </Text>
-            <a href="#">Find a location</a>
+            <Link>Find a location</Link>
           </ListContainer>
         </List2>
       </ListLayout2>
@@ -190,14 +202,14 @@ const Into = () => {
         <List3>
           <Image3 src="https://www.fedex.com/content/dam/fedex/us-united-states/shipping/images/POD_HispanicHeritage_727x463.jpg" />
           <ListContainer3>
-            <Heading type="Into2">Celebrating Hispanic Heritage Month</Heading>
+            <Heading as="h4">Celebrating Hispanic Heritage Month</Heading>
             <Text type="IntoPara">
               Hispanic Heritage Month is a month-long celebration of Hispanic
               and Latino history and culture. See how some of our team members
               stay connected to their roots and why they feel diversity and
               inclusion matter.
             </Text>
-            <a href="#">Read the stories</a>
+            <Link>Read the stories</Link>
           </ListContainer3>
         </List3>
       </ListLayout3>

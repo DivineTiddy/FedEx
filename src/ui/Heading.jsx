@@ -27,11 +27,12 @@ const Heading = styled.h1`
       color: #333;
     `}
     ${(props) =>
-    props.type === "Into2" &&
+    props.as === "h4" &&
     css`
-      font-size: 22px;
-      line-height: 1.2em;
-      margin-top: 20px;
+      font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: -0.4px;
+    font-size: 1.5rem;
       color: #333;
       text-align: start !important;
     `}
@@ -44,6 +45,19 @@ const Heading = styled.h1`
       letter-spacing: 0.75px;
       text-transform: uppercase;
       text-align: start !important;
+      width: auto;
+    `}
+    ${(props) =>
+    props.type === "Term" &&
+    css`
+      color: #fff;
+      text-transform: none;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.3;
+      font-style: normal;
+      letter-spacing: normal;
+      width: auto;
     `}
     text-align:center;
   font-family: Arial, Helvetica, sans-serif;

@@ -8,6 +8,7 @@ const Layout = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
   @media (min-width: 1000px) {
     width: 70%;
   }
@@ -16,7 +17,7 @@ const Layout = styled.div`
 const Guarantee = () => {
   return (
     <Layout>
-      <Heading type="Into2">FedEx money-back guarantee</Heading>
+      <Heading as="h4">FedEx money-back guarantee</Heading>
       <Text type="IntoPara">
         We offer a money-back guarantee for select services. This guarantee may
         be suspended, modified, or revoked. Please check money-back guarantee

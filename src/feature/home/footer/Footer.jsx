@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Details from "./Details";
 import Media from "./Media";
+import Terms from "./Terms";
 
 const Layout = styled.footer`
   width: 100%;
@@ -8,7 +9,7 @@ const Layout = styled.footer`
   display: flex;
   margin-top: 150px;
   background-color: #fafaf7;
-  padding-top: 30px;
+  padding-top: 0px;
   flex-direction: column;
   align-items: center;
 `;
@@ -17,6 +18,7 @@ const Footer = () => {
     <Layout>
       <Details />
       <Media />
+      <Terms/>
     </Layout>
   );
 };

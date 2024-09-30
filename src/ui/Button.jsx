@@ -20,6 +20,24 @@ const Button = styled.button`
       gap: 10px;
     `}
   ${(props) =>
+    props.type === "NotActive" &&
+    css`
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: bold;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      color: black;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    `}
+  ${(props) =>
     props.type === "Track" &&
     css`
       font-family: Arial, Helvetica, sans-serif;
@@ -48,10 +66,11 @@ const Button = styled.button`
       text-transform: uppercase;
       letter-spacing: 1px;
       min-width: 160px;
-    max-width: 280px;
-    max-height: 72px;
-    background-color: white;
+      max-width: 280px;
+      max-height: 72px;
+      background-color: white;
     `}
+    cursor: pointer;
 `;
 
 export default Button;

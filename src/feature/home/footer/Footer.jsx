@@ -12,6 +12,7 @@ const Layout = styled.footer`
   padding-top: 0px;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
 `;
 const Footer = () => {
   return (

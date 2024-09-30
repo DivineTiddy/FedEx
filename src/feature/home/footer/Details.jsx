@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Heading from "../../../ui/Heading";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Layout = styled.div`
   width: 90%;
@@ -36,6 +38,8 @@ const Link = styled.a`
   font-size: 0.75rem !important;
   letter-spacing: 0;
   color: #333;
+  display: flex;
+  align-items: center;
 `;
 const More = styled.ul`
   list-style: none;
@@ -56,7 +60,6 @@ const Language = styled.div`
 const LanguageContainer = styled.div`
   width: auto;
   height: 61px;
-  border: 1px solid #333;
   display: flex;
   align-items:center;
 `;
@@ -112,7 +115,7 @@ const Details = () => {
         <Heading type="FooterHeading">LANGUAGE</Heading>
         <Link>United States</Link>
         <LanguageContainer>
-          <Link href="">ENGLISH</Link>
+          <Link href="">ENGLISH <FontAwesomeIcon icon={faChevronDown} /></Link>
         </LanguageContainer>
       </Language>
     </Layout>

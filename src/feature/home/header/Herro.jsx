@@ -5,7 +5,7 @@ import Heading from "../../../ui/Heading";
 
 const Layout = styled.div`
   width: 100%;
-  height: 300px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -44,6 +44,7 @@ const Link = styled.a`
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
@@ -61,9 +62,11 @@ const User = styled.div`
 
 const Search = styled.div`
   width: 100px;
+  cursor: pointer;
 `;
 const Bar = styled.div`
   display: flex;
+  cursor: pointer;
   @media (min-width: 1000px) {
     display: none;
   }
@@ -76,7 +79,7 @@ const Nav = () => {
       </Logo>
       <NavList>
         <List>
-          <Link>
+          <Link href="https://www.fedex.com/en-us/shipping.html#">
             Shipping
             <FontAwesomeIcon icon={faChevronDown} />
           </Link>
@@ -87,18 +90,18 @@ const Nav = () => {
           </Link>
         </List>
         <List>
-          <Link>
+          <Link href="https://www.office.fedex.com/">
             Design&Print
             <FontAwesomeIcon icon={faChevronDown} />
           </Link>
         </List>
         <List>
-          <Link>
+          <Link href="https://local.fedex.com/en-us">
             Location <FontAwesomeIcon icon={faChevronDown} />
           </Link>
         </List>
         <List>
-          <Link>
+          <Link href="https://www.fedex.com/en-us/customer-support.html">
             Support <FontAwesomeIcon icon={faChevronDown} />
           </Link>
         </List>

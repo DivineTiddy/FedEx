@@ -14,7 +14,6 @@ const Layout = styled.form`
     width: 65%;
     height: 150px;
   }
-
 `;
 const Input = styled.input`
   width: 100%;
@@ -65,9 +64,10 @@ const Tracking = () => {
   return (
     <Layout>
       <ContentLayout>
-      <Input placeholder="TRACKING ID" />
-      <Button type="submit">TRACk</Button>
+        <Input placeholder="TRACKING ID" />
+        <Button type="submit">TRACk</Button>
       </ContentLayout>
+      
       <Link href="#">NEED HELP?</Link>
     </Layout>
   );

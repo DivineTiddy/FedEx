@@ -36,6 +36,16 @@ const Text = styled.p`
       letter-spacing: -0.1px;
       color: #333;
     `}
+    ${(props) =>
+    props.type === "Track" &&
+    css`
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 300;
+      letter-spacing: -0.1px;
+      color: #333;
+    `}
+    
     font-family: Arial, Helvetica, sans-serif;
   width: auto;
   text-align: center;

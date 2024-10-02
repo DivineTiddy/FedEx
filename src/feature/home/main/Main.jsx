@@ -6,6 +6,7 @@ import Start from "./Start";
 import Into from "./Into";
 import Packages from "./Packages";
 import Guarantee from "./Guarantee";
+import Track from "../../track/Track";
 
 const Layout = styled.div`
   width: 100%;
@@ -32,11 +33,12 @@ const Main = () => {
         <Link />
         <Tracking />
       </LinkAndTrack>
+      <Track />
       <Categories />
-      <Start/>
-      <Into/>
-      <Packages/>
-      <Guarantee/>
+      <Start />
+      <Into />
+      <Packages />
+      <Guarantee />
     </Layout>
   );
 };

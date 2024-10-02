@@ -30,9 +30,9 @@ const Heading = styled.h1`
     props.as === "h4" &&
     css`
       font-weight: 300;
-    line-height: 1.3;
-    letter-spacing: -0.4px;
-    font-size: 1.5rem;
+      line-height: 1.3;
+      letter-spacing: -0.4px;
+      font-size: 1.5rem;
       color: #333;
       text-align: start !important;
     `}
@@ -58,6 +58,18 @@ const Heading = styled.h1`
       font-style: normal;
       letter-spacing: normal;
       width: auto;
+    `}
+    ${(props) =>
+    props.type === "Track" &&
+    css`
+        color: #333;
+
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 700;
+      letter-spacing: -0.1px;
+      width: auto;
+      text-align: start !important;
     `}
     text-align:center;
   font-family: Arial, Helvetica, sans-serif;

@@ -42,7 +42,7 @@ const Track = ({data}) => {
     </List>
     <List>
       <Heading type="Track">From</Heading>
-      <Text>Greensboro, NC, US</Text>
+      <Text>Florida Central Pkwy Longwood, Fl 32750 United States</Text>
     </List>
     <List>
       <Heading type="Track">To</Heading>

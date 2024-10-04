@@ -7,6 +7,8 @@ import Into from "./Into";
 import Packages from "./Packages";
 import Guarantee from "./Guarantee";
 import Track from "../../track/Track";
+import Axios from "axios";
+import { useState } from "react";
 
 const Layout = styled.div`
   width: 100%;
@@ -27,13 +29,32 @@ const LinkAndTrack = styled.div`
   }
 `;
 const Main = () => {
+  const [data, setData] = useState(null);
+  const [trackId, settrackId] = useState("");
+
+
+  function Submit(e) {
+    e.preventDefault();
+    Axios.get(`https://fedexbackend-3.onrender.com/api/users/data`, {
+      trackId,
+    })
+      .then((response) => {
+        if (response.data.staus) {
+          console.log(response);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   return (
     <Layout>
       <LinkAndTrack>
         <Link />
-        <Tracking />
+        <Tracking Submit={Submit} />
       </LinkAndTrack>
-      <Track />
+      <Track data={data} />
       <Categories />
       <Start />
       <Into />

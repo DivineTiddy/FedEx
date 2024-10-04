@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// import propTypes from "prop-types"
+import propTypes from "prop-types";
 
 const Layout = styled.form`
   width: 90%;
@@ -60,17 +62,46 @@ const ContentLayout = styled.div`
   }
 `;
 
-const Tracking = () => {
+const Tracking = ({ setValue, Submit }) => {
+  // const [data , setData] = useState(null)
+  // function Submit(e) {
+  //   e.preventDefault()
+  //   useEffect(() =>{
+  //     async function fetchData(){
+  //       try{
+  //         const response = await fetch(`https://fedexbackend-3.onrender.com/api/users/data`)
+  //        const newResponse = await response.json();
+  //        setData(newResponse)
+  //       }
+  //       catch{
+  //         console.error('error')
+  //       }
+  //       finally{
+  //         console.log('Finally')
+  //       }
+  //     }
+  //     fetchData()
+  //   },[])
+
+  // }
+
   return (
-    <Layout>
+    <Layout onSubmit={Submit}>
       <ContentLayout>
-        <Input placeholder="TRACKING ID" />
+        <Input
+          onChange={(e) => setValue(e.target.value)}
+          placeholder="TRACKING ID"
+        />
         <Button type="submit">TRACk</Button>
       </ContentLayout>
-      
+
       <Link href="#">NEED HELP?</Link>
     </Layout>
   );
+};
+Tracking.propTypes = {
+  setValue: propTypes.func,
+  Submit: propTypes.func,
 };
 
 export default Tracking;

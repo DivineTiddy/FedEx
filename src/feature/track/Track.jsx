@@ -29,8 +29,7 @@ const Track = ({data}) => {
   console.log(data)
   return (
   <>
-   {
-    data &&  <TrackList>
+   <TrackList>
     <List>
       <Heading type="Track">Tracking ID</Heading>
       <Text type="Track">722695085046</Text>
@@ -63,7 +62,6 @@ const Track = ({data}) => {
       </Text>
     </List>
   </TrackList>
-   }
   </>
   );
 };

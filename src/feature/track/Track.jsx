@@ -46,7 +46,7 @@ const Track = ({data}) => {
     </List>
     <List>
       <Heading type="Track">To</Heading>
-      <Text>37 Circle Dr.Denison, Texas, 75021</Text>
+      <Text>12722 Wolf Dr, Phelan, USA</Text>
     </List>
     <List>
       <Heading type="Track">Ship date</Heading>

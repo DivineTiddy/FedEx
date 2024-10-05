@@ -26,10 +26,11 @@ const List = styled.li`
 `;
 
 const Track = ({data}) => {
-  console.log(data)
   return (
   <>
-   <TrackList>
+ 
+  {
+    data &&  <TrackList>
     <List>
       <Heading type="Track">Tracking ID</Heading>
       <Text type="Track">722695085046</Text>
@@ -62,10 +63,13 @@ const Track = ({data}) => {
       </Text>
     </List>
   </TrackList>
+  }
+  
   </>
   );
 };
 Track.propTypes = {
-  data: propTypes.array,
+  data: propTypes.bool,
+  error: propTypes.bool,
 };
 export default Track;

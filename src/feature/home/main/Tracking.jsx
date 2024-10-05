@@ -62,7 +62,7 @@ const ContentLayout = styled.div`
   }
 `;
 
-const Tracking = ({ setValue, Submit }) => {
+const Tracking = ({HandleSubmit , setQuery }) => {
   // const [data , setData] = useState(null)
   // function Submit(e) {
   //   e.preventDefault()
@@ -86,10 +86,10 @@ const Tracking = ({ setValue, Submit }) => {
   // }
 
   return (
-    <Layout onSubmit={Submit}>
+    <Layout onSubmit={HandleSubmit}>
       <ContentLayout>
         <Input
-          onChange={(e) => setValue(e.target.value)}
+          onChange={(e) => setQuery(e.target.value)}
           placeholder="TRACKING ID"
         />
         <Button type="submit">TRACk</Button>
@@ -100,8 +100,8 @@ const Tracking = ({ setValue, Submit }) => {
   );
 };
 Tracking.propTypes = {
-  setValue: propTypes.func,
-  Submit: propTypes.func,
+  setQuery: propTypes.func,
+  HandleSubmit: propTypes.func,
 };
 
 export default Tracking;

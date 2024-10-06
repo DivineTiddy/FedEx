@@ -53,6 +53,18 @@ const Track = ({data}) => {
       <Text>05/10/2024</Text>
     </List>
     <List>
+      <Heading type="Track">Item</Heading>
+      <Text>
+       Box
+      </Text>
+    </List>
+    <List>
+      <Heading type="Track">Shipment Subtotal</Heading>
+      <Text>
+       $500.30
+      </Text>
+    </List>
+    <List>
       <Heading type="Track">Service</Heading>
       <Text>FedEx Priority Overnight</Text>
     </List>
@@ -62,6 +74,7 @@ const Track = ({data}) => {
         Deliver Weekday, Residential Delivery, No Signature Required
       </Text>
     </List>
+    
   </TrackList>
   }
   

@@ -42,15 +42,15 @@ const Track = ({data}) => {
     </List>
     <List>
       <Heading type="Track">From</Heading>
-      <Text>Florida Central Pkwy Longwood</Text>
+      <Text>Ahor maksar, Aden Yemen</Text>
     </List>
     <List>
       <Heading type="Track">To</Heading>
-      <Text>12722 Wolf Dr, Phelan, USA</Text>
+      <Text>2629 State Hwy 73 Tunas Missouri USA</Text>
     </List>
     <List>
       <Heading type="Track">Ship date</Heading>
-      <Text>05/10/2024</Text>
+      <Text>19/10/2024</Text>
     </List>
     <List>
       <Heading type="Track">Item</Heading>
@@ -61,7 +61,7 @@ const Track = ({data}) => {
     <List>
       <Heading type="Track">Shipment Subtotal</Heading>
       <Text>
-       $500.30
+       $500.00
       </Text>
     </List>
     <List>

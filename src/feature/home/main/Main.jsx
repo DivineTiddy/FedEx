@@ -34,7 +34,7 @@ const Main = () => {
 
   function HandleSubmit(e) {
     e.preventDefault();
-    if (query == 888695085046) {
+    if (query == 999695085046) {
       setData(true);
     } else {
       setError(true);

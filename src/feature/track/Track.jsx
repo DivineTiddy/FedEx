@@ -33,7 +33,11 @@ const Track = ({data}) => {
     data &&  <TrackList>
     <List>
       <Heading type="Track">Tracking ID</Heading>
-      <Text type="Track">888695085046</Text>
+      <Text type="Track">999695085046</Text>
+    </List>
+    <List>
+      <Heading type="Track">Name</Heading>
+      <Text>Jean Marie Smith</Text>
     </List>
   
     <List>
@@ -42,15 +46,15 @@ const Track = ({data}) => {
     </List>
     <List>
       <Heading type="Track">From</Heading>
-      <Text>Ahor maksar, Aden Yemen</Text>
+      <Text>924 Florida Central United States</Text>
     </List>
     <List>
       <Heading type="Track">To</Heading>
-      <Text>2629 State Hwy 73 Tunas Missouri USA</Text>
+      <Text>343 Cliffview Drive Gahanna OH 43240</Text>
     </List>
     <List>
       <Heading type="Track">Ship date</Heading>
-      <Text>19/10/2024</Text>
+      <Text>30/10/2024</Text>
     </List>
     <List>
       <Heading type="Track">Item</Heading>
